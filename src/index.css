@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,190 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.hidden{
+  display: none;
+}
+
+.player-control-panel{
+  position: relative;
+  color: #ababab;
+  height: 50px;
+}
+
+.player-control-panel>ul{
+  display: flex;
+  padding: 10px 20px;
+}
+
+.player-control-panel>ul>li{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.player-control-panel>ul>li:hover{
+  color: #565656;
+}
+
+.player-info-panel{
+  position: relative;
+  height: 30px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+.play-state>.pause-btn{
+  display: none;
+}
+
+.play-state>.play-btn{
+  display: initial;
+}
+
+.pause-state>.play-btn{
+  display: none;
+}
+
+.pause-state>.pause-btn{
+  display: initial;
+}
+
+.visual-time{
+  height: 100%;
+  width: 0;
+  background-color: #80bbff;
+}
+
+.time-info{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ml-20{
+  margin-left: 20px !important;
+}
+
+.mr-20{
+  margin-right: 20px !important;
+}
+
+.ml-30{
+  margin-left: 30px !important;
+}
+
+.mr-30{
+  margin-right: 30px !important;
+}
+
+.times-list{
+  flex: 1 0 130px;
+  padding-top: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.times-list>span{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.text-block{
+  flex: 100%;
+  position: relative;
+  height: 100%;
+  /*box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25) inset, 0 0 0 #fff;*/
+}
+
+.text-block textarea{
+  width: 100%;
+  /*min-height: calc(100% - 4px);*/
+  padding: 10px;
+  font-size: 14px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+}
+
+.mark-time-item{
+
+}
+
+.mark-time-item>span{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  color: #ababab;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ababab;
+}
+
+.mark-time-item>span:hover{
+  color: #565656;
+  border-color: #565656;;
+}
+
+.mark-time-item>input{
+  padding: 4px 8px;
+  width: calc(100% - 30px);
+  margin-left: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.search-text>input{
+  height: 38px;
+  padding: 10px;
+  border: none;
+  border-radius: 22px;
+  box-sizing: border-box;
+  font-size: 16px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+  outline: none;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  width: calc(100% - 100px);
+  color: #565656;
+}
+
+.search-result-block{
+    height: calc(100% - 70px);
+    overflow: auto;
+}
+
+.result-search-song{
+    display: flex;
+    border-bottom: 1px dashed #565656;
+}
+
+.result-search-song>div{
+    padding: 0 6px;
+    white-space: break-spaces;
 }

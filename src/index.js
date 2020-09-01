@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Lyrics from './pages/Lyrics';
 import * as serviceWorker from './serviceWorker';
+
+import { Provider } from 'react-redux'
+import store from './store'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Provider store={ store }>
+          <Lyrics />
+      </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,30 @@
+.Lyrics{
+    height: calc(100vh - 80px);
+}
+
+.Lyrics-content{
+    display: flex;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.Lyrics-left{
+    display: flex;
+    flex: 1 0 700px;
+    border-right: 1px solid #ccc;
+    overflow: auto;
+}
+
+.Lyrics-center{
+    flex: 100%;
+}
+
+.Lyrics-bottom{
+    height: 80px;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 0px 4px 1px rgba(34,36,38,.15);
+}
